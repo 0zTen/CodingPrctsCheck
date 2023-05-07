@@ -27,7 +27,7 @@ public class Tekrar01 {
         else if (not<0) {
             System.out.println("gecersiz");
         }
-
+ //deneme
     }
 
 
