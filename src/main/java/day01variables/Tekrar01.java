@@ -18,7 +18,7 @@ public class Tekrar01 {
         if (not ==100 || not>= 80) {
             System.out.println(Isim +"'in notu = " + not+ " = A");
         }
-        if (not < 80 || not > 60){
+        if (not <= 79 || not >= 59){
             System.out.println(Isim +"'in notu = " + not+ " = B");
         }
         if (not > 50){
