@@ -17,14 +17,16 @@ public class NestedIf03 {
         System.out.println("Input Password");
         String pwd = scan.nextLine();
 
-        if(pwd.charAt(0)>='A'&& pwd.charAt(0)<='Z'){//Pwdnin ilk harfi buyuk harfi ise
-            if(pwd.charAt(0)=='A'){
+        char firstChar=pwd.charAt(0);
+
+        if(firstChar>='A'&& firstChar<='Z'){//Pwdnin ilk harfi buyuk harfi ise
+            if(firstChar=='A'){
                 System.out.println("Valid");
             }else{
                 System.out.println("Invalid because Upper case but not A ");
             }
-        }else if (pwd.charAt(0)>='a' &&pwd.charAt(0)<='z'){//pwdnin ilk harfi kucuk ise
-            if (pwd.charAt(0)=='z'){
+        }else if (firstChar>='a' &&firstChar<='z'){//pwdnin ilk harfi kucuk ise
+            if (firstChar=='z'){
                 System.out.println("Valid");
             }else{
                 System.out.println("Invalid because lower case but not z");
