@@ -22,7 +22,7 @@ public class Arrays03 {
         System.out.println(sum);
         //2.yol
         int minimum= ages[0];
-        int maximum= ages[2];
+        int maximum= ages[0];
         int sum2=0;
         for (int w:ages){
            sum2 =Math.min(minimum,w)+Math.max(maximum,w);
