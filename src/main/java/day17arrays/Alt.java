@@ -2,6 +2,7 @@ package day17arrays;
 
 import java.util.Scanner;
 
+import java.util.Arrays;
 public class Alt {
     public static void main(String[] args) {
         //ie: kullanicinin coklu datayi bir arraye yerlestirebilmesi, istedigi zaman durdurabilmesi icin gereken kod

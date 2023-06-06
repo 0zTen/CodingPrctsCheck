@@ -23,7 +23,12 @@ public class Arrays03 {
         }
         //2.yol Binary Search
         /*
-
+        1)binarySearch() methodunu sort() kullanmadan kullanmayiniz, cunku binarySearch() mantigi sirali elemanlar icin gecerlidir
+        2)binarySearch() methodu var olan elemanlar icin size o elemanin index ini verir
+        3)binarySearch() methodundan aldiginiz index 0 veya 0 dan buyukse bu o eleman arrayde var demektir
+        4)binarySearch() methodu olmayan elemanlar icin negatif tamsayi degeri verir.
+        "-" isaretinin anlami o eleman yok demektir.
+        "sayi" ise o eleman olsaydi kacinci eleman olurdu demektir
          */
         Arrays.sort(names);
         int result = Arrays.binarySearch(names,el);
@@ -35,7 +40,10 @@ public class Arrays03 {
         }
         int num1=Arrays.binarySearch(names,"A");
         System.out.println(num1);
-
-
+        int num2=Arrays.binarySearch(names,"K");
+        System.out.println(num2);
+        int num3= Arrays.binarySearch(names,"U");
+        System.out.println(num3);//-6 ==> "-" bu eleman yok demek
+        //6 ise olsaydi Altinci eleman olurdu
     }
 }
